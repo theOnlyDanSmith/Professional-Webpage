@@ -142,72 +142,6 @@
       align-items: center;
     }
 
-    /* Decorative accents replicated from the geo-panel but used subtly across the layout
-       These use low opacity, no pointer events, and are placed via pseudo-elements so
-       the shapes are present as design accents rather than their own section. */
-    .accent-graphics { pointer-events: none; }
-
-    header::before {
-      content: "";
-      position: absolute;
-      left: 24px;
-      top: 12px;
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      background: var(--ultra);
-      opacity: 0.06;
-      z-index: 0;
-    }
-
-    .hero-heading { position: relative; z-index: 1; }
-    .hero-heading::after {
-      content: "";
-      position: absolute;
-      right: -8px;
-      top: 10%;
-      width: 220px;
-      height: 14px;
-      background: linear-gradient(90deg, var(--orange) 0%, var(--teal) 50%, var(--deep-orange) 100%);
-      opacity: 0.06;
-      transform: translateY(-10%);
-      border-radius: 4px;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    .agent-section { position: relative; }
-    .agent-section::before {
-      content: "";
-      position: absolute;
-      right: 12px;
-      bottom: 8px;
-      width: 140px;
-      height: 64px;
-      background: linear-gradient(180deg, var(--pink) 0%, var(--yellow) 100%);
-      opacity: 0.04;
-      border-radius: 6px;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    footer::before {
-      content: "";
-      position: absolute;
-      left: 8px;
-      bottom: 8px;
-      width: 44px;
-      height: 28px;
-      background: linear-gradient(90deg, var(--deep-orange), var(--cyan));
-      opacity: 0.05;
-      border-radius: 3px;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    /* Ensure main stacking and positioning still works */
-    header, .agent-section, footer { position: relative; }
-
     .geo-panel .circle {
       width: 90%;
       aspect-ratio: 1;
@@ -330,12 +264,12 @@
       <section>
         <h1 class="hero-heading">Interview an AI <span>voice version of Dan</span>.</h1>
         <p class="hero-subtitle">
-          Use the floating widget below to hear about my work in customer success and digital marketing.
+          Use the floating widget below to chat with my digital clone about my work in customer success, digital marketing, or my sabbatical.
         </p>
        
         <div class="primary-actions">
           <a href="resume.html" class="btn btn-primary">See my resume</a>
-          <a href="#social" class="btn btn-secondary">Send me an email</a>
+          <a href="mailto:dsmith882@gmail.com" class="btn btn-secondary">Send me an email</a>
         </div>
 
       </section>
@@ -346,7 +280,7 @@
         <ul class="meta-list">
           <li>How I built the scaled customer success program at Dovetail</li>
           <li>My work renegotiating contracts at scale</li>
-          <li>How I developed a pricing strategy for sports teams selling social media posts</li>
+          <li>How I developed a pricing strategy for sports teams selling their social media assets</li>
           <li>My Thru-Hike of the Appalachain Trail</li>
         </ul>
       </section>
@@ -380,7 +314,7 @@
         <a href="mailto:dsmith882@gmail.com">Email</a>
       </div>
       <div class="disclosure">
-        This site hosts an experimental voice agent I'm working on. I've done my best to prompt the AI for accuracy, but don't go quoting my virtual twin here!
+        This page is for hosting an experimental voice agent I'm working on. I've done my best to prompt the AI for accuracy, but don't go quoting my virtual twin here!
       </div>
     </footer>
   </div>
